@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuessMaster"
+    android:background="@color/lightblack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ticket"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="Total Tickets: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/entityimage"
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/entityname"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="102dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/guessinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:text="MM-DD-YYYY"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp">
+
+            <TableRow
+                android:layout_width="391dp"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnguess"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Guess"
+                    android:backgroundTint="@color/green"/>
+
+                <Space
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnclear"
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="Change Entity"
+                    android:backgroundTint="@color/green"/>
+
+                <Space
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
